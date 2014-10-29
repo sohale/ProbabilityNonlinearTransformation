@@ -38,33 +38,3 @@ public class TransformationZ2Y implements Transformation<ZSpace, YSpace> {
 	}
 
 }
-
-
-
-
-//
-//
-//new Transformation<ZSpace, YSpace>() {
-//
-//	YSpace yspace=ys; //no access to parameters
-//	
-//	Transformation<ZSpace, YSpace>(YSpace ys){
-//		
-//	}
-//	//how to assign in a constructur? 
-//	
-//	@Override
-//	public MyPoint<YSpace> transform(MyPoint<ZSpace> zs) {
-//		
-//		MyPoint<YSpace> p = new MyPoint<YSpace>(ys);
-//	for(int i=0;i<zspace.getDims();i++)
-//			p.x[i]=-Math.sqrt(2.0)*Erf.erfcInv(2*s.x[i]);
-//		return p;
-//	
-//	}
-//	
-//	@Override
-//	public Transformation<YSpace, ZSpace> getInverse(YSpace ys) {
-//		return TransformationY2Z.this; // cool!
-//	}
-//};
